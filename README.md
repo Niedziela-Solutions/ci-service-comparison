@@ -2,6 +2,8 @@
 
 Repo to demonstrate differences between common CI platforms.
 
+Right now, just has basic CircleCI Node/Ruby orb setups.
+
 ## Platforms
 
 - [x] CircleCI
@@ -10,4 +12,4 @@ Repo to demonstrate differences between common CI platforms.
 ## Language Examples
 
 - [x] Node/Jest
-- [ ] Ruby/Rspec
+- [x] Ruby/Rspec

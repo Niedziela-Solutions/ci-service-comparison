@@ -2,6 +2,7 @@ version: 2.1
 
 orbs:
   node: circleci/node@4.1.0
+  ruby: circleci/ruby@1.1.1
 
 jobs:
   node_test:
@@ -13,7 +14,16 @@ jobs:
       - node/install-packages
       - run: npm run test
 
+  ruby_test:
+    docker:
+      - image: 'cimg/ruby:2.7.2'
+    steps:
+      - checkout
+      - ruby/install-deps
+      - ruby/rspec-test
+
 workflows:
   test:
     jobs:
       - node_test
+      - ruby_test
