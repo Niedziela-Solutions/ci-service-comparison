@@ -1,15 +1,23 @@
-# CI Config Examples
+# CI Service Configuration Examples
 
-Repo to demonstrate differences between common CI platforms.
+Repository to demonstrate differences between common CI platforms and to store common boilerplate config.
 
-Right now, just has basic CircleCI Node/Ruby orb setups.
+Right now, it just has basic [CircleCI orb setups](https://circleci.com/developer/orbs).
 
 ## Platforms
 
 - [x] CircleCI
 - [ ] Github Actions
 
-## Language Examples
+## Code Examples
 
 - [x] Node/Jest
 - [x] Ruby/Rspec
+- [ ] Auditing tools (Ruby)
+- [ ] Database support
+- [ ] Linting
+- [ ] Deployment
+
+## Sources
+
+- [CircleCI Orbs](https://circleci.com/developer/orbs)

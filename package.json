@@ -3,7 +3,6 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "Sarah Sunday",
   "devDependencies": {
     "jest": "^26.5.3"
   }
