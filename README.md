@@ -2,16 +2,12 @@
 
 Repository to demonstrate differences between common CI platforms and to store common boilerplate config.
 
-Right now, it just has basic [CircleCI orb setups](https://circleci.com/developer/orbs) and Github Actions configurations.
+Right now, it just has basic [CircleCI orb setups](https://circleci.com/developer/orbs) and Github Actions configurations, based off of the provider examples.
 
 ## Code Examples
 
-- [x] Node/Jest
-- [x] Ruby/Rspec
-- [ ] Auditing tools (Ruby)
-- [ ] Database support
-- [ ] Linting
-- [ ] Deployment
+- Node tests with Jest
+- Ruby Rspec tests
 
 ## Sources
 
