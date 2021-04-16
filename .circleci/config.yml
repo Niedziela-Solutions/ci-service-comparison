@@ -5,10 +5,31 @@ orbs:
   ruby: circleci/ruby@1.1.1
 
 jobs:
+  node_subfolder_test:
+    working_directory: ~/example/node
+    executor:
+      name: node/default
+      tag: '14.15.1'
+    steps:
+      - checkout:
+          path: ~/example
+      - node/install-packages
+      - run: npm run test
+
+  ruby_subfolder_test:
+    working_directory: ~/example/ruby
+    docker:
+      - image: 'cimg/ruby:2.7.2'
+    steps:
+      - checkout:
+          path: ~/example
+      - ruby/install-deps
+      - ruby/rspec-test
+
   node_test:
     executor:
       name: node/default
-      tag: '14.14.0'
+      tag: '14.15.1'
     steps:
       - checkout
       - node/install-packages
@@ -27,3 +48,5 @@ workflows:
     jobs:
       - node_test
       - ruby_test
+      - node_subfolder_test
+      - ruby_subfolder_test
