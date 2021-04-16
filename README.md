@@ -7,7 +7,8 @@ Right now, it just has basic [CircleCI orb setups](https://circleci.com/develope
 ## Code Examples
 
 - Node tests with Jest
-- Ruby Rspec tests
+- Ruby RSpec tests
+- Example of running CircleCI in subfolders (for a monorepo)
 
 ## Sources
 
