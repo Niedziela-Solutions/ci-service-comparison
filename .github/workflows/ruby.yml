@@ -14,6 +14,6 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.7.2
+        ruby-version: 2.7.5
     - run: bundle install
     - run: bundle exec rspec

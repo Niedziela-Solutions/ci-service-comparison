@@ -19,7 +19,7 @@ jobs:
   ruby_subfolder_test:
     working_directory: ~/example/ruby
     docker:
-      - image: 'cimg/ruby:2.7.2'
+      - image: 'cimg/ruby:2.7.5'
     steps:
       - checkout:
           path: ~/example
@@ -37,7 +37,7 @@ jobs:
 
   ruby_test:
     docker:
-      - image: 'cimg/ruby:2.7.2'
+      - image: 'cimg/ruby:2.7.5'
     steps:
       - checkout
       - ruby/install-deps
